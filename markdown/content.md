@@ -10,7 +10,8 @@ HTML (HyperText Markup Language) is the standard language for creating web pages
 
 ## Example Code
 
-```html
+```
+html
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,3 +21,4 @@ HTML (HyperText Markup Language) is the standard language for creating web pages
   <h1>Hello, World!</h1>
 </body>
 </html>
+```
