@@ -45,6 +45,22 @@
       text-align: justify;
     }
 
+    footer {
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    footer .book-info {
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    footer .navigation {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+
     footer button {
       background-color: #4CAF50;
       color: white;
@@ -60,6 +76,7 @@
 
     #progress {
       font-size: 0.9rem;
+      text-align: center;
     }
 
     @media (max-width: 768px) {
@@ -71,9 +88,13 @@
         padding: 10px;
       }
 
-      footer {
-        flex-direction: column;
+      footer .navigation {
+        flex-direction: row;
         gap: 10px;
+      }
+
+      footer button {
+        padding: 8px 12px;
       }
     }
 
@@ -105,16 +126,22 @@
 <body>
   <div class="ebook-reader">
     <header>
-      <h1 id="book-title">Sample eBook Title</h1>
+      <h1 id="book-title">HTML CSS JS Untuk Pemula</h1>
       <button id="settings-btn">🌙</button>
     </header>
     <main id="content-area">
       <!-- Content will be dynamically inserted here -->
     </main>
     <footer>
-      <button id="prev-btn">Previous</button>
-      <span id="progress">Page 1 of 1</span>
-      <button id="next-btn">Next</button>
+      <div class="book-info">
+        <p><strong>HTML CSS JS Untuk Pemula</strong></p>
+        <p>Oleh: Wahyudi</p>
+      </div>
+      <div id="progress">Page 1 of 1</div>
+      <div class="navigation">
+        <button id="prev-btn">←</button>
+        <button id="next-btn">→</button>
+      </div>
     </footer>
   </div>
 
