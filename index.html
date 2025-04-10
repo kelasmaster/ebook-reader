@@ -109,80 +109,66 @@
       <button id="settings-btn">🌙</button>
     </header>
     <main id="content-area">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </p><br/>
-      <p>
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p><br/>
-      <p>
-        Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris.
-       </p><br/>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </p><br/>
-      <p>
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p><br/>
-      <p>
-        <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </p><br/>
-      <p>
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p><br/>
-      <p>
-        <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </p><br/>
-      <p>
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p><br/>
-      <p>
-        <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </p><br/>
-      <p>
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p><br/>
-      <p>
-        <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </p><br/>
-      <p>
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p><br/>
-      <p>
+      <!-- Content will be dynamically inserted here -->
     </main>
     <footer>
       <button id="prev-btn">Previous</button>
-      <span id="progress">Page 1 of 10</span>
+      <span id="progress">Page 1 of 1</span>
       <button id="next-btn">Next</button>
     </footer>
   </div>
 
   <script>
+    // Sample eBook content (long text)
+    const fullText = `
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec quis dui at dolor tempor interdum.
+      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras imperdiet. Donec mattis, justo sed facilisis malesuada, neque felis tincidunt arcu, vel vehicula odio metus ac nisi. Suspendisse potenti. Proin euismod, nisi vel consequat feugiat, nisl tellus iaculis massa, vel tincidunt arcu velit quis nunc. Nulla facilisi. Donec non urna. Morbi hendrerit, enim sit amet vestibulum accumsan, velit erat lacinia odio, nec dictum nisi velit nec libero.
+      Fusce vel augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In hac habitasse platea dictumst. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+      Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+    `;
+
     // Variables
     let currentPage = 1;
-    const totalPages = 10;
+    const maxWordsPerPage = 300;
+    let pages = [];
 
-    // Update Progress
-    function updateProgress() {
-      document.getElementById('progress').textContent = `Page ${currentPage} of ${totalPages}`;
+    // Split content into pages
+    function splitContentIntoPages(text, wordsPerPage) {
+      const words = text.split(' ');
+      const totalPages = Math.ceil(words.length / wordsPerPage);
+
+      const pageChunks = [];
+      for (let i = 0; i < totalPages; i++) {
+        const start = i * wordsPerPage;
+        const end = start + wordsPerPage;
+        pageChunks.push(words.slice(start, end).join(' '));
+      }
+
+      return pageChunks;
+    }
+
+    // Initialize pages
+    pages = splitContentIntoPages(fullText, maxWordsPerPage);
+
+    // Update displayed content
+    function updateDisplayedContent() {
+      document.getElementById('content-area').textContent = pages[currentPage - 1];
+      document.getElementById('progress').textContent = `Page ${currentPage} of ${pages.length}`;
     }
 
     // Navigation Buttons
     document.getElementById('prev-btn').addEventListener('click', () => {
       if (currentPage > 1) {
         currentPage--;
-        updateProgress();
+        updateDisplayedContent();
       }
     });
 
     document.getElementById('next-btn').addEventListener('click', () => {
-      if (currentPage < totalPages) {
+      if (currentPage < pages.length) {
         currentPage++;
-        updateProgress();
+        updateDisplayedContent();
       }
     });
 
@@ -191,8 +177,8 @@
       document.body.classList.toggle('dark-mode');
     });
 
-    // Initialize Progress
-    updateProgress();
+    // Initialize Display
+    updateDisplayedContent();
   </script>
 </body>
 </html>
