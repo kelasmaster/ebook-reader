@@ -4,7 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Responsive eBook Reader</title>
-  <link rel="stylesheet" href="styles.css">
+  <style>
+      main {
+        padding: 10px;
+      }
+
+      footer .navigation {
+        flex-direction: row;
+        gap: 10px;
+      }
+
+      footer button {
+        padding: 8px 12px;
+      }
+    }
+
+    /* Dark Mode */
+    body.dark-mode {
+      background-color: #333;
+      color: #fff;
+    }
+
+    body.dark-mode main {
+      background-color: #444;
+      color: #fff;
+    }
+
+    body.dark-mode header,
+    body.dark-mode footer {
+      background-color: #222;
+    }
+
+    body.dark-mode footer button {
+      background-color: #555;
+    }
+
+    body.dark-mode footer button:hover {
+      background-color: #777;
+    }
+  </style>
 </head>
 <body>
   <div class="ebook-reader">
