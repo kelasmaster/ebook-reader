@@ -184,12 +184,7 @@
       }
     }
 
-    // Escape HTML tags to display them as plain text
-    function escapeHtml(html) {
-      const tempDiv = document.createElement('div');
-      tempDiv.textContent = html;
-      return tempDiv.innerHTML;
-    }
+   
 
     // Split content into pages
     function splitContentIntoPages(html, wordsPerPage) {
