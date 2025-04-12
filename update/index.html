@@ -184,18 +184,10 @@
       }
     }
 
-   
-
     // Split content into pages
     function splitContentIntoPages(html, wordsPerPage) {
       const tempDiv = document.createElement('div');
       tempDiv.innerHTML = html;
-
-      // Escape HTML code inside <pre><code> blocks
-      const codeBlocks = tempDiv.querySelectorAll('pre code');
-      codeBlocks.forEach((block) => {
-        block.textContent = escapeHtml(block.textContent);
-      });
 
       const text = tempDiv.textContent || tempDiv.innerText || '';
       const words = text.split(' ');
