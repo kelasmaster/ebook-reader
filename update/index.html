@@ -45,6 +45,18 @@
       text-align: justify;
     }
 
+    pre {
+      background-color: #f4f4f4;
+      padding: 10px;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+
+    code {
+      font-family: 'Courier New', monospace;
+      color: #d63384;
+    }
+
     footer {
       flex-direction: column;
       gap: 5px;
@@ -172,10 +184,24 @@
       }
     }
 
+    // Escape HTML tags to display them as plain text
+    function escapeHtml(html) {
+      const tempDiv = document.createElement('div');
+      tempDiv.textContent = html;
+      return tempDiv.innerHTML;
+    }
+
     // Split content into pages
     function splitContentIntoPages(html, wordsPerPage) {
       const tempDiv = document.createElement('div');
       tempDiv.innerHTML = html;
+
+      // Escape HTML code inside <pre><code> blocks
+      const codeBlocks = tempDiv.querySelectorAll('pre code');
+      codeBlocks.forEach((block) => {
+        block.textContent = escapeHtml(block.textContent);
+      });
+
       const text = tempDiv.textContent || tempDiv.innerText || '';
       const words = text.split(' ');
       const totalPages = Math.ceil(words.length / wordsPerPage);
